@@ -40,7 +40,7 @@ var assertFileExists = function(infile) {
 
 var assertUrlExists = function(url) {
     rest.get('http://twaud.io/api/v1/users/danwrong.json').on('complete', function(data) {
-    return(data[0].message); // auto convert to object
+    return(data[0]); // auto convert to object
 });
 }
 
